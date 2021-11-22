@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	/*function sorteia(n){
+		return numeroPensado = Math.round(Math.random() * n);
+	}*/
+
+	var limite = parseInt(prompt("Entre com a data limite"));
+	var anoCopa = 1930;
+
+	while(anoCopa <= limite){
+		mostra(anoCopa + " teve copa!");
+		anoCopa = anoCopa + 4;
+	}
+
+	mostra("Ufa! Esses foram os anos de Copa até " + limite);
+	
+
+
+		
+</script>
